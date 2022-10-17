@@ -18,7 +18,7 @@ export function ContactItem({ contact, item, onDelete }) {
   );
 }
 ContactItem.propTypes = {
-  contact: PropTypes.object,
-  item: PropTypes.number,
-  onDelete: PropTypes.func,
+   contact: PropTypes.string.isRequired,
+  item: PropTypes.number.isRequired,
+  onDelete: PropTypes.func.isRequired
 };

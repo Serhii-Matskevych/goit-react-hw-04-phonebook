@@ -16,6 +16,6 @@ export function ContactList({ contacts, onDelete }) {
   );
 }
 ContactList.propTypes = {
-  contacts: PropTypes.arrayOf(PropTypes.object),
-  onDelete: PropTypes.func,
+  contacts: PropTypes.arrayOf(PropTypes.id).isRequired,
+  onDelete: PropTypes.func.isRequired
 };

@@ -9,6 +9,6 @@ export const Filter = ({ filter, filterChange }) => {
   );
 };
 Filter.propTypes = {
-  filter: PropTypes.string,
-  filterChange: PropTypes.func,
+  filter: PropTypes.string.isRequired,
+  filterChange: PropTypes.func.isRequired
 };
