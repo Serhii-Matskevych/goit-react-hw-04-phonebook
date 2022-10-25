@@ -15,7 +15,13 @@ export function ContactList({ contacts, onDelete }) {
     </>
   );
 }
-ContactList.propTypes = {
- id: PropTypes.string.isRequired,
-  onDelete: PropTypes.func.isRequired
+ContactList.propTypes =  {
+  deleteContact: PropTypes.func.isRequired,
+  searchContact: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 };
